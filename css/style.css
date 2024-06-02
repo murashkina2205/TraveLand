@@ -13,12 +13,16 @@ body {
   }
   html {
     font-size: 1.1em;
-    font-family:'Montserrat', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 body{
-    font-family: 'montserratregular', 'Arial', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     min-width: 320px;
-}button-book
+}
 .container{
     position: relative;
     margin: 0 auto;
@@ -31,13 +35,23 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position-x: center;
 }
 .ribeye-regular {
     font-family: "Ribeye", serif;
     font-weight: 400;
     font-style: normal;
 }
-  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .header-menu{
     min-height: 300px;
     width: 100%;
@@ -69,7 +83,6 @@ body{
 }
 h1{
     font-weight: bold;
-    margin:20px;
     font-family: 'Courier New', Courier, monospace;
 }
 .menu__link{
@@ -100,7 +113,9 @@ ul {
     font-size: 18px;
     line-height: 28px;
     opacity: 60%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     align-items: center;
 }
 .title1 {
@@ -163,6 +178,7 @@ main{
     height: 100%;
     border-radius: 10px 10px 0px 0px;
     opacity: 0px;    
+    margin-top:60px; 
 }
 .location{
     display: flex;
@@ -174,19 +190,26 @@ main{
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-    border: 1px grey solid;
-    border-radius: 10px;
+    border: 1px rgb(238, 234, 234) solid ;
     
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    row-gap:20px ;
+
 }
-img{
+
+.im img{
+    width: 100%;
+}
+/* img{
     overflow: hidden;
-}
+} */
 .div_attractions{
     display: flex;
     flex-direction: column;
     justify-content: center; 
     text-align: center;
-
 }
 ._popuraplocation{
     display: flex;
@@ -194,7 +217,9 @@ img{
     align-items: center;
     font-size: 44px;
     margin-top: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 ._aboutText{
     display: flex;
@@ -204,22 +229,33 @@ img{
 .aboutText{
     width: 735px;
     height: 58px;
-    gap: 0px;
     opacity: 50%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: black;
     font-size: 18px;
     font-weight: 400;
     line-height: 28.8px;
     text-align: center;
 }
-
+h2.attractions{
+    font-family: "Gelasio", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 .text_attractions{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
     line-height: 28.8px;
     text-align: center;
-
+    opacity: 60%;
+    margin-bottom: 10px;
 }
 /*------------------Special Others------------------------*/
 ._specialOffers{
@@ -227,8 +263,10 @@ img{
     justify-content: center;
     align-items: center;
     font-size: 44px;
-    margin-top: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .aboutTextSpecialOffers{
     display: flex;
@@ -266,6 +304,13 @@ img{
     opacity: 40%;
     margin-right: 30px;
 }
+h4.title_others{
+    font-family: "Gelasio", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+}
 .name{
     display: flex;
     flex-direction: row;
@@ -281,32 +326,6 @@ img{
     flex-wrap: wrap;
     gap: 0.5em;
 }
-/*--------------------Blogs&News---------------------*/
-/* .news{
-    display: grid;
-    max-width: 1200px; 
-    margin: auto;
-    padding: 0 20px;
-    grid-template-columns:repeat(2,1fr);
-    grid-gap: 1em;
-}
-.new_2{
-    grid-column: 2/13;
-    grid-row: 1/4;
-}
-.new_3{
-    grid-column: 2/3;
-    grid-row: 5/8;
-} */
-/* .news {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-template-areas:
-      "a a a a b b b b"
-      "a a a a b b b b"
-      "a a a a c c c c ";
-  } */
 .news{
     display: flex;
     flex-direction: row;
@@ -316,6 +335,11 @@ img{
 .news_11{
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+}
+.opisanie{
+    opacity: 70%;
+    line-height:30px;
 }
 .news_2, 
 .news_3, 
@@ -326,19 +350,42 @@ img{
 .mini1{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    margin-left: 20px;
+    row-gap: 10px;
+}
+.news_1, .news_11{
+    width: 50%;
+}
+.blog{
+    margin-top: 60px;
+}
+.blog_news{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+h4.title_others2{
+    font-family: "Gelasio", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
 }
 /*----------------------Footer-------------------------*/
-.footer{
+.container_footer{
     display: flex;
     flex-direction: row;
     gap: 6em;
     padding-top: 60px; ;
     justify-content: center;
-    align-items:baseline;
+    align-items:baseline; 
     min-height: 250px;
     background-color:#2694990A;
-}
+    margin-top: 40px;
+} 
 .title2{
     color: #212121;
     font-size: 24px;
@@ -362,6 +409,21 @@ img{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.email{
+    width: 195px;
+    height: 44px;
+    border-radius: 5px;
+    color: black;
+    opacity: 30%;
+    
+}
+.text_email{
+    position: absolute;
+    color: black;
+    z-index: 1;
+    margin-top: 55px;
+    margin-left: 6px;
 }
 
 
